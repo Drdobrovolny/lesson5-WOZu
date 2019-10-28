@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TocPage } from '../toc/toc';
+import { Chapter1Page } from '../chapter1/chapter1'; 
+import { Chapter2Page } from '../chapter2/chapter2';
+
 
 /**
  * Generated class for the Chapter3Page page.
@@ -21,5 +25,23 @@ export class Chapter3Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Chapter3Page');
   }
+  
+
+
+  launchToc(){
+     this.navCtrl.push(TocPage);
+  };
+  launchChapter1(){
+    this.navCtrl.push(Chapter1Page); 
+  };
+  launchChapter2(){
+    this.navCtrl.push(Chapter2Page); 
+  };
+  launchChapter3(){
+    this.navCtrl.push(Chapter3Page); 
+  }
 
 }
+
+
+
